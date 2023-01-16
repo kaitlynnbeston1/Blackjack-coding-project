@@ -1,0 +1,35 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url("table.jfif");
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    color: lightgoldenrodyellow;
+}
+
+button {
+    text-color: #016f32;
+    width: 150px;
+    padding: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin: 5px;
+}
+
+
+#message-el {
+    font-style: italic;
+}
+
+#start-btn {
+    color: goldenrod;
+}
+
+#draw-btn {
+    background-color: lime;
+}
