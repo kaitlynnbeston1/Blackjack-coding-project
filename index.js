@@ -1,3 +1,4 @@
+// Initializing all variables
 let score = 0
 let cards = []
 let message = ""
@@ -7,6 +8,7 @@ let messageEl = document.getElementById("message-el")
 let displaySum = document.getElementById("sum")
 let cardsEl = document.getElementById("cards-el")
 
+// Creating a function which renders the game after every play
 function render() {
     cardsEl.textContent = "Cards: "
     for (let i = 0; i < cards.length; i++) {
@@ -26,6 +28,7 @@ function render() {
     messageEl.textContent = message
 }
 
+// Starting the game.
 function start() {
     isAlive = true
     let firstCard = randCard()
@@ -36,6 +39,7 @@ function start() {
     render()
 }
 
+// Randomizing which cards are chosen.
 function randCard() {
     let num = Math.floor(Math.random() * 13 + 1)
     if (num > 10) {
@@ -47,14 +51,13 @@ function randCard() {
     }
 }
 
+// Function which draws one of the randomized cards
 function drawCard() {
     if (isAlive === true && hasBlackjack === false) {
         var card = randCard()
         cards.push(card)
         score += card
     }
-
-
     render()
 }
 
